@@ -1,0 +1,7 @@
+<beans>
+    <bean name="myBean" class="com.example.MyBean">
+        <property name="myProperty">
+            <value>Hello, World!</value>
+        </property>
+    </bean>
+</beans>
