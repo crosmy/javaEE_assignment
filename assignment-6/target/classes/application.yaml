@@ -1,0 +1,19 @@
+
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/productDB2?useSSL=false&autoReconnect=true&characterEncoding=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher  #解决swagger 3与Spring boot的版本兼容问题
+
+# 开启mp的日志（输出到控制台）
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
